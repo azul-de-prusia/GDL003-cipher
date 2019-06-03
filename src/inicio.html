@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+        <div id="div2">
+            <img src="https://i.ytimg.com/vi/yfwdjBPUxNc/maxresdefault.jpg" title="Título y fecha" width="360" height="92" /> 
+            <br>
+            <input type="text" name="string" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" id="string" value =""> 
+            <input type="number" name="incremento" id="incremento" value =""> 
+            <input type="submit" onclick="cipher(document.getElementById('string').value,parseInt(document.getElementById('incremento').value))" value="clicks"> 
+        </div>
+        <div id="div3" style="display:none">
+            <p>Su código de compra es:</p>
+            <p id = "mensajecodificado"> </p>
+            <input type="button" OnClick="location.href='index.html' ">
+        </div>
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

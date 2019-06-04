@@ -11,7 +11,7 @@
             <img src="https://4.bp.blogspot.com/-32U0K6_2jWU/WXg_K7r-WQI/AAAAAAAA35w/_jVZbUaT7McehHbEuwc6EVJGQvgXM7WGQCLcBGAs/s1600/Dos%2Bviejos%2Bcomiendo%2Bsopa.png" title="goyadosviejoscomiendosopa Año 1823" width="300" height="200" /> 
             <img src="https://images-na.ssl-images-amazon.com/images/I/81OZo2gqgEL._SY606_.jpg" title="gustavemoreauapollo Año 1885" width="165" height="242" /> 
             <br>
-            <input type="text" name="string" placeholder="autor y obra" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" id="string" value =""> 
+            <input type="text" name="string"  pattern="[A-NO-Z]" placeholder="autor y obra" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" id="string" value =""> 
             <input type="number" name="incremento" placeholder="Año" id="incremento" value =""> 
             <input type="submit" onclick="cipher(document.getElementById('string').value,parseInt(document.getElementById('incremento').value))" value="cifrar"> 
         </div>
@@ -19,6 +19,15 @@
             <p>Su código de compra es:</p>
             <p id = "mensajecodificado"> </p>
             <input type="button" OnClick="location.href='index.html' ">
+        </div>
+        <div id="div4">
+         
+          <input type="text" name="string"  pattern="[A-NO-Z]" placeholder="autor y obra" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" id="string" value =""> 
+          <input type="number" name="incremento" placeholder="Año" id="incremento" value =""> 
+          <input type="submit" onclick="cipher(document.getElementById('string').value,parseInt(document.getElementById('incremento').value))" value="descifrar"> 
+          <p>Su código de compra es:</p>
+          <p id = "mensajecodificado"> </p>
+          <input type="button" OnClick="location.href='index.html' ">
         </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

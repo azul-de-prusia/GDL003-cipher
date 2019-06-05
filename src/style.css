@@ -4,14 +4,15 @@ h1
     background-color: #000000;
     color: #949ba5;
     text-align: center;
-    font-size: 4em;
+    font-size: 3.5em;
     margin-top: 1em;
     margin-left: 5em;  
     margin-right: 5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 body {background-color:#000000}
-#div3{
+#div3
+{
     color: #949ba5;
     text-align: center;
     margin-top: 1em;

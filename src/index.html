@@ -6,20 +6,37 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-     <h1>
+      <script src="cipher.js"></script>
+      <script src="index.js"></script>
+    <form>
+    <div id="inicio">
+      <h1>
       Galería  
       <input type="button" name="B4" OnClick="location.href='inicio.html' ">
-     </h1> 
-     <IMG SRC="https://assets.bigcartel.com/product_images/236341505/9_wands_Wallart_Micah_Ulrich_Poster_art_ORIGINAL.png?auto=format&fit=max&w=780" width="225" height="350
+      </h1> 
+      <IMG SRC="https://assets.bigcartel.com/product_images/236341505/9_wands_Wallart_Micah_Ulrich_Poster_art_ORIGINAL.png?auto=format&fit=max&w=780" width="225" height="350
      " HSPACE="10" VSPACE="10">
       <IMG SRC="http://millartists.com/wp-content/uploads/2018/03/8BB96DC3-49B9-45FB-AA74-B226A8F1D2F8.jpeg" width="350" height="350" HSPACE="10" VSPACE="10">
       <IMG SRC="https://pbs.twimg.com/profile_images/1013262904659857411/-0oWOZeJ_400x400.jpg" width="350" height="350" HSPACE="10" VSPACE="10">
       <IMG SRC="https://cdn.shopify.com/s/files/1/2542/0006/products/Allison_Sommers_chesapeake.jpg?v=1528683444" width="225" height="350" HSPACE="10" VSPACE="10">
-      <input type="button" value="Escultura">
-      <input type="button" value="Gráfica">
-      <input type="button" value="Pintura">
+      <input type="button" value="Gráfica" id= "grafica"onclick= "muestragrafica()">
+      <input type="button" value="Pintura" id= "pintura"onclick= "muestrapintura()">
     </div>
-        <script src="cipher.js"></script>
-    <script src="index.js"></script>
+  </form>
+   <form>
+    <div id="div6" style="display:none">
+      <p>Gráfica</p>
+      <IMG SRC="https://assets.bigcartel.com/product_images/236341505/9_wands_Wallart_Micah_Ulrich_Poster_art_ORIGINAL.png?auto=format&fit=max&w=780" width="225" height="350
+     " HSPACE="10" VSPACE="10">
+    </div>
+  </form>
+  <form>
+    <div id="div7" style="display:none">
+      <p>Pintura</p>
+      <img src="https://images.curiator.com/images/t_x/art/33e0d870fb0b8ae8ce4efc076e90d504/jean-delville-the-treasures-of-satan-1895.jpg" title="jeandelvilletreasuresofsatan Año 1895" width="240" height="242" /> 
+    </div>
+  </form>
+        
   </body>
 </html>
+

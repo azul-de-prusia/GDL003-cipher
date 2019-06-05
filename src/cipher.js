@@ -19,10 +19,11 @@ function cipher(string,incremento){
    
       div2.style.display = "none"
    
-      var div3 = document.getElementById("div3")
-   
-      div3.style.display = "block"
+    
       var div4 = document.getElementById("div4")
+   
+      div4.style.display = "block"
+      var div4 = document.getElementById("div5")
    
       div4.style.display = "none"
    }
@@ -59,9 +60,7 @@ function cipher(string,incremento){
    
         div2.style.display = "none"
         
-        var div3 = document.getElementById("div3")
-        div3.style.display = "none"
-        
+      
         var div4 = document.getElementById("div4")
         div4.style.display = "none"
 

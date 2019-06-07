@@ -18,3 +18,22 @@ body {background-color:#000000}
     margin-top: 1em;
     font-size: 2em;
 }
+#galeria2
+{
+    border-radius: 15px;
+    background-color: #000000;
+    color: #1a1919;
+    border-color: #1a1919;
+}
+#galeria2:hover
+{
+  color:#000000;
+  background-color:  #1a1919;
+}
+#boton, #string, #string1, #incremento, #incremento1
+{
+    background-color: #000000;
+    color: #949ba5;
+    border-color: #1a1919;
+    
+}

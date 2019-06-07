@@ -19,7 +19,7 @@ function cipher(string,incremento){
    
       div2.style.display = "none"
    
-    
+
       var div4 = document.getElementById("div4")
    
       div4.style.display = "block"

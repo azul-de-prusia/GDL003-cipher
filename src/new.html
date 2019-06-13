@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+        
+        <form action="./new.html">
+        <input type="text" name="string" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" id="string" value =""> 
+        <input type="number" name="incremento" id="incremento" value =""> 
+    <input type="submit" onclick="cipher(document.getElementById('string').value,parseInt(document.getElementById('incremento').value))" value=""> 
+        </form>     
+    <p id = "mensajecodificado">
+      
+    </p>
+  </div>
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

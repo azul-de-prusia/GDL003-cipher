@@ -1,0 +1,39 @@
+h1
+{
+    padding : 20px;
+    background-color: #000000;
+    color: #949ba5;
+    text-align: center;
+    font-size: 3.5em;
+    margin-top: 1em;
+    margin-left: 5em;  
+    margin-right: 5em;
+    margin-bottom: 1em;
+}
+body {background-color:#000000}
+#div2, #div3, #div4, #div5, #div6, #div7
+{
+    color: #949ba5;
+    text-align: center;
+    margin-top: 1em;
+    font-size: 2em;
+}
+#galeria2
+{
+    border-radius: 15px;
+    background-color: #000000;
+    color: #1a1919;
+    border-color: #1a1919;
+}
+#galeria2:hover
+{
+  color:#000000;
+  background-color:  #1a1919;
+}
+#boton, #string, #string1, #incremento, #incremento1, #botoncifrar, #botondescifrar, #grafica, #pintura
+{
+    background-color: #000000;
+    color: #949ba5;
+    border-color: #1a1919;
+    
+}

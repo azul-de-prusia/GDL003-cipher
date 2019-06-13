@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+        <div id="div2" style="display: block;">
+          <img src="https://www.republica.com/wp-content/uploads/2019/01/girasoles.jpg" title="VanGoghSunflowers Año 1889" width="202" height="226" /> 
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81OZo2gqgEL._SY606_.jpg" title="GustaveMoreauApollo Año 1885" width="165" height="242" /> 
+            <img src="https://4.bp.blogspot.com/-32U0K6_2jWU/WXg_K7r-WQI/AAAAAAAA35w/_jVZbUaT7McehHbEuwc6EVJGQvgXM7WGQCLcBGAs/s1600/Dos%2Bviejos%2Bcomiendo%2Bsopa.png" title="GoyaDosviejoscomiendosopa Año 1823" width="300" height="200" />
+            <img src="https://images.curiator.com/images/t_x/art/33e0d870fb0b8ae8ce4efc076e90d504/jean-delville-the-treasures-of-satan-1895.jpg" title="JeanDelvilleTreasuresofsatan Año 1895" width="240" height="242" /> 
+            <img src="http://2.bp.blogspot.com/_42TrOiavZOg/TGLWxoaffRI/AAAAAAAAAL4/qYoIQ115tZg/s1600/Waterhouse,+Ophelia+1910.jpg" title="WaterhouseOphelia Año 1885" width="179" height="250" /> 
+            <img src="https://img.culturacolectiva.com/content/2016/06/magritte-el-hijo-del-hombre.jpg" title="MagritteElhijodelhombre Año 1964" width="186" height="260" /> 
+            <img src="https://i.pinimg.com/originals/14/83/fb/1483fb10e1361b6e3937c558c2833924.jpg" title="ZdzislavBekinskiUntitled Año 1978" width="270" height="270" /> 
+            <img src="https://i.pinimg.com/originals/f6/71/b2/f671b22f33b5e0c891ed9e48bc3eae6c.jpg" title="LeonoraCarringtonAncestro Año 1905" width="193" height="280" />
+            <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.0-9/1016486_829736620381221_3844100873537094140_n.jpg?_nc_cat=108&_nc_ht=scontent-qro1-1.xx&oh=3711d3328310b82b634b9156a2651fb1&oe=5D8F6A86" title="MikhailVrubelHeadofthedemon Year 1890" width="200" height="255" />
+            <br>
+            <!-- formulario y botón cipher -->
+            <input type="text" name="string" placeholder="autor y obra" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();
+            this.value=cipher.NumText(this.value)" id="string" oninput="" value ="">  
+            <input type="number" name="incremento" placeholder="Año" id="incremento" value="" oninput="">          
+            <input type="button" id="botoncifrar" value="cifrar">
+            <br>
+            <!-- formulario y botón decipher -->
+            <input type="text" name="string1" placeholder="autor y obra" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();
+          this.value=cipher.NumText(this.value)" id="string1" value =""> 
+          <input type="number" name="incremento1" placeholder="Año" id="incremento1" value =""> 
+          <input type="button" id="botondescifrar" value="descifrar"> 
+        </div>
+        <div id="div4" style="display:none">
+          <p>Su código de compra es:</p>
+          <p id = "mensajecodificado"> </p>
+          <p>Por favor envíe un correo electrónico a bidimensionalgaleria@gmail.com con su código de compra en el asunto</p>
+          <p>Gracias</p>
+          <input id= "boton" type="button" OnClick="location.href='index.html' ">
+        </div>
+        <div id="div5" style="display:none">
+          <p>El código de su obra en venta es:</p>
+          <p id = "mensajedecodificado"> </p>
+          <p>Por favor envíe un correo electrónico a bidimensionalgaleria@gmail.com donde mencione el año de la obra que nos ofrece</p>
+          <p>Gracias</p>
+          <input id= "boton" type="button" OnClick="location.href='index.html' ">
+      </div>
+      <script src="cipher.js"></script>
+      <script src="index.js"></script>
+    
+    
+  </body>
+</html>

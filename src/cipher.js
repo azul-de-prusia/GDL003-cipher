@@ -1,25 +1,6 @@
-   /*
-window.cipher = {
-   encode: () => {
-
-   },
-   decode: () => {
-
-   }
-}
-
-*/
 
 let cifrar=document.getElementById("botoncifrar");
 let decifrar=document.getElementById("botondescifrar");
-/*let totext=document.getElementById("botoncifrar");*/
-//let string=document.getElementById("string").value;
-/*
-let incremento=document.getElementById("incremento").value;
-let string1=document.getElementById("string1").value;
-let incremento1=document.getElementById("incremento1").value;
-*/
-
 
 let cipher = {
 
@@ -30,7 +11,7 @@ let cipher = {
      { 
         console.log(string);
         console.log(incremento);
-        //console.log(inicio);
+     
         let x = string.charCodeAt(inicio); //Obtiene el codigo ascii de la letra  
         let formula = (x -65+parseInt(incremento))%26+65; //formula laboratoria
         console.log(x);
@@ -41,32 +22,31 @@ let cipher = {
 
         inicio++;
 
-       // document.getElementById("botoncifrar").addEventListener("click", cipher);
      }
     
    },
-   //decipher
+   //función decipher
    decipher: (string,incremento) => {
      
       let longitud = string.length;
       let inicio = 0;
         while (inicio  < longitud)
         { 
-           //console.log(inicio);
+    
            let x = string.charCodeAt(inicio); //Obtiene el codigo ascii de la letra 
 
-           let formula = (x-65-parseInt(incremento))%26+65; //formula laboratoria
+           let formula = (x+65-parseInt(incremento))%26+65; //formula laboratoria
            console.log(formula);
            let resultado =parseInt(formula);
 console.log(resultado);
-           let letracodificada = String.fromCharCode(resultado); //sustitución por la variable introducida
+           let letracodificada = String.fromCharCode(resultado+26); //sustitución por la variable introducida
             if (letracodificada==="["){
                document.getElementById("mensajedecodificado").innerHTML += "A";
             } else {
-               document.getElementById("mensajedecodificado").innerHTML += letracodificada;
+               document.getElementById("mensajedecodificado").innerHTML += letracodificada; //imprime la letra codificada a partir del codigo ascii 
             }
             
-           //document.getElementById("mensajedecodificado").innerHTML += letracodificada //imprime la letra codificada a partir del codigo ascii 
+
            
            inicio++;
         }

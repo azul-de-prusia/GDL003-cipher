@@ -3,7 +3,9 @@ let grafica=document.getElementById("grafica");
 let pintura=document.getElementById("pintura");
 let encode=document.getElementById("botoncifrar");
 let decode=document.getElementById("botondescifrar");
-//grafica.addEventListener("click", muestragrafica,false);
+let inicio=document.getElementById("galeria2"); 
+let index=document.getElementById("boton");
+let index2=document.getElementById("boton2");
 
 let muestragrafica= () => {
     
@@ -18,7 +20,7 @@ let muestrapintura= () => {
     document.getElementById('div6').style.display = 'none';
     document.getElementById('div7').style.display = 'block';
     document.getElementById('inicio').style.display = 'none';
-    //document.getElementById("p").addEventListener("click", muestrapintura(),{});
+ 
 };
 
 //mostrar y ocultar encode
@@ -27,8 +29,7 @@ let showEncode= () => {
     document.getElementById('div2').style.display = 'none';
     document.getElementById('div4').style.display = 'block';
     document.getElementById('div5').style.display = 'none';
-    //console.log(document.getElementById("incremento").value)
-        //document.getElementById("botoncifrar").addEventListener("click", showEncode(),{});
+    
     };
 let showDecode= () => {
 //mostrar y ocultar decode  
@@ -40,9 +41,37 @@ let showDecode= () => {
 
         let div5 = document.getElementById("div5");
         div5.style.display = "block";
-        //console.log("oli")
-        //document.getElementById("botoncifrar").addEventListener("click", showDecode(),{});
+       
     };
+            
+    let cambiohtml= () => {
+        //dirige a otra html  
+                
+               location.href='inicio.html'
+               
+            };
+    let cambio1html1= () => {
+             //dirige a la primera html  
+                        
+                location.href='index.html'
+                       
+            };
+    let cambiohtml2= () => {
+            //dirige a la primera html  
+                                   
+                location.href='index.html'
+                                  
+            };
+        
+    if (inicio){
+        inicio.addEventListener("click", cambiohtml);
+    }
+    if (index){
+        index.addEventListener("click", cambio1html1);
+    }
+    if (index2){
+        index2.addEventListener("click", cambiohtml2);
+    }
     if (grafica){
         grafica.addEventListener("click", muestragrafica);
     }

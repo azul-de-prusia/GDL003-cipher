@@ -1,15 +1,16 @@
-h1
+header
 {
-    padding : 20px;
+    padding : 0;
     background-color: #000000;
     color: #949ba5;
     text-align: center;
-    font-size: 3.5em;
+    font-size: 200%;
     margin-top: 1em;
     margin-left: 5em;  
     margin-right: 5em;
     margin-bottom: 1em;
 }
+
 body {background-color:#000000}
 #div2, #div3, #div4, #div5, #div6, #div7
 {
@@ -25,15 +26,35 @@ body {background-color:#000000}
     color: #1a1919;
     border-color: #1a1919;
 }
-#galeria2:hover, #boton:hover, #boton2:hover
+#galeria2:hover, #boton:hover, #boton2:hover, #grafica:hover, #pintura:hover
 {
   color:#000000;
   background-color:  #1a1919;
 }
-#string, #string1, #incremento, #incremento1, #botoncifrar, #botondescifrar, #grafica, #pintura
+#string, #string1, #incremento, #incremento1, #botoncifrar, #botondescifrar
 {
     background-color: #000000;
     color: #949ba5;
     border-color: #1a1919;
-    
+}
+#grafica, #pintura{
+    background-color: #000000;
+    color: #949ba5;
+    border-color: #1a1919;
+    padding: 20px;
+}
+.micah{
+    width: 16%;
+    margin: 1.5%;
+}
+.allison{
+    height: 2%;
+    width: 18%;
+    margin: 1.5%;
+}
+.skull, .teagan{
+    height: 2%;
+    width: 25%;
+    margin: 1.5%;
+
 }
